@@ -1,5 +1,6 @@
 import static org.junit.Assert.assertEquals;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -48,10 +49,9 @@ public class DemoSiteTest {
 		assertEquals("**Successful Login**", target.getText());
 	}
 
-//	@After
-//	@Ignore
-//	public void close() {
-//		driver.close();
-//	}
+	@After
+	public void close() {
+		driver.close();
+	}
 
 }
